@@ -65,7 +65,7 @@ main();
 import { Scanner, ScanResult } from 'api-scanner-sdk';
 
 const result: ScanResult = await new Scanner().scan({
-  rootDir: './my-project',
+  rootDir: './test/fixtures',
   minConfidence: 'medium',
   verbose: true,
   output: { format: 'csv', filePath: './endpoints.csv' },
